@@ -1,0 +1,11 @@
+Equipment_ID	Timestamp	Avg_Vibration_Last_1_Hour	Temp_vs_7Day_Avg_Delta	Status_Proxy
+PMP-001	2025-11-20 8:00:00	2.1	42.5	Normal
+PMP-001	2025-11-20 8:01:00	2.3	42.6	Normal
+MOT-105	2025-11-20 8:00:00	5.8	68.2	Warning
+MOT-105	2025-11-20 8:01:00	6.1	69.5	Warning
+COM-210	2025-11-20 8:00:00	1.5	35	Normal
+MOT-105	2025-11-20 8:02:00	7.2	72.1	Critical
+PMP-001	2025-11-20 8:02:00	2.2	42.7	Normal
+MOT-105	2025-11-20 8:03:00	8.5	75.4	Critical
+COM-210	2025-11-20 8:01:00	1.6	35.2	Normal
+PMP-001	2025-11-20 8:03:00	2.4	42.8	Normal
