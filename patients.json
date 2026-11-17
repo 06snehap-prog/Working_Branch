@@ -1,0 +1,1842 @@
+[
+  {
+    "patient_id": "SYN-001",
+    "abha_address": "syn001@synthetic",
+    "demographics": {
+      "name": "Sunita Devi",
+      "age": 54,
+      "sex": "F",
+      "state": "Bihar",
+      "district": "Sitamarhi",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2025-10-05",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Diabetes follow-up",
+        "note": ""
+      },
+      {
+        "date": "2026-01-15",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Diabetes follow-up",
+        "note": ""
+      },
+      {
+        "date": "2026-04-10",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Diabetes and BP review",
+        "note": "Follow-up advised in 3 months"
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "E11",
+        "name": "Type 2 diabetes",
+        "since": "2019"
+      },
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2021"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2025-10-05",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 7.6,
+        "unit": "%"
+      },
+      {
+        "date": "2026-01-15",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 8.8,
+        "unit": "%"
+      },
+      {
+        "date": "2026-04-10",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 9.8,
+        "unit": "%"
+      },
+      {
+        "date": "2026-04-10",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 152,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-04-10",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 94,
+        "unit": "mmHg"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Metformin",
+        "dose": "500 mg twice daily",
+        "start": "2019-06-01",
+        "last_fill": "2026-04-10",
+        "facility": "SYN-PHC-01",
+        "stopped": null
+      },
+      {
+        "drug": "Glimepiride",
+        "dose": "1 mg once daily",
+        "start": "2022-03-01",
+        "last_fill": "2026-04-10",
+        "facility": "SYN-PHC-01",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "HbA1c rising 7.6 -> 8.8 -> 9.8",
+        "Follow-up overdue (due 2026-07-10)",
+        "BP above target at last visit"
+      ],
+      "expected_summary": "54F, T2DM and hypertension. HbA1c worsening over 6 months, last seen 2026-04-10 and 3-month follow-up missed."
+    }
+  },
+  {
+    "patient_id": "SYN-002",
+    "abha_address": "syn002@synthetic",
+    "demographics": {
+      "name": "Ramesh Yadav",
+      "age": 61,
+      "sex": "M",
+      "state": "Uttar Pradesh",
+      "district": "Gorakhpur",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-03-02",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "BP check",
+        "note": ""
+      },
+      {
+        "date": "2026-06-02",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Headache, BP check",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2018"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-03-02",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 164,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-03-02",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 100,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-06-02",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 168,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-06-02",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 102,
+        "unit": "mmHg"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Amlodipine",
+        "dose": "5 mg once daily",
+        "start": "2018-05-01",
+        "last_fill": "2026-03-02",
+        "facility": "SYN-PHC-01",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "BP uncontrolled on two consecutive visits",
+        "No medication refill recorded for over 7 months (possible lapse)"
+      ],
+      "expected_summary": "61M, hypertension on amlodipine 5 mg. BP 168/102 at last visit and no refill since March."
+    }
+  },
+  {
+    "patient_id": "SYN-003",
+    "abha_address": "syn003@synthetic",
+    "demographics": {
+      "name": "Lakshmi Kannan",
+      "age": 26,
+      "sex": "F",
+      "state": "Tamil Nadu",
+      "district": "Salem",
+      "preferred_language": "Tamil"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-09-15",
+        "facility": "SYN-PHC-01",
+        "type": "ANC",
+        "reason": "Antenatal visit",
+        "note": ""
+      },
+      {
+        "date": "2026-10-20",
+        "facility": "SYN-PHC-01",
+        "type": "ANC",
+        "reason": "Antenatal visit",
+        "note": "Approx 29 weeks"
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "Z34",
+        "name": "Pregnancy, supervised (LMP 2026-04-01)",
+        "since": "2026-04"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-09-15",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 128,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-09-15",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 82,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-09-15",
+        "name": "Hemoglobin",
+        "loinc": "718-7",
+        "value": 10.2,
+        "unit": "g/dL"
+      },
+      {
+        "date": "2026-10-20",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 148,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-20",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 96,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-20",
+        "name": "Hemoglobin",
+        "loinc": "718-7",
+        "value": 8.9,
+        "unit": "g/dL"
+      },
+      {
+        "date": "2026-10-20",
+        "name": "Urine protein (dipstick)",
+        "loinc": "",
+        "value": "1+",
+        "unit": "grade"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Iron-folic acid",
+        "dose": "1 tablet daily",
+        "start": "2026-05-01",
+        "last_fill": "2026-10-20",
+        "facility": "SYN-PHC-01",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "BP 148/96 in third trimester (rising from 128/82)",
+        "New proteinuria 1+",
+        "Anemia Hb 8.9 g/dL"
+      ],
+      "expected_summary": "26F, about 32 weeks pregnant. BP and urine protein rising, Hb 8.9: possible pre-eclampsia risk, needs doctor assessment."
+    }
+  },
+  {
+    "patient_id": "SYN-004",
+    "abha_address": "syn004@synthetic",
+    "demographics": {
+      "name": "Mohan Lal",
+      "age": 67,
+      "sex": "M",
+      "state": "Rajasthan",
+      "district": "Alwar",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2025-08-20",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Annual review",
+        "note": ""
+      },
+      {
+        "date": "2026-08-14",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Annual review",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "E11",
+        "name": "Type 2 diabetes",
+        "since": "2012"
+      },
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2014"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2025-08-20",
+        "name": "eGFR",
+        "loinc": "62238-1",
+        "value": 52,
+        "unit": "mL/min/1.73m2"
+      },
+      {
+        "date": "2026-08-14",
+        "name": "eGFR",
+        "loinc": "62238-1",
+        "value": 38,
+        "unit": "mL/min/1.73m2"
+      },
+      {
+        "date": "2026-08-14",
+        "name": "Creatinine",
+        "loinc": "2160-0",
+        "value": 1.9,
+        "unit": "mg/dL"
+      },
+      {
+        "date": "2026-08-14",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 7.9,
+        "unit": "%"
+      },
+      {
+        "date": "2026-08-14",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 142,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-08-14",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 88,
+        "unit": "mmHg"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Metformin",
+        "dose": "1000 mg twice daily",
+        "start": "2013-01-01",
+        "last_fill": "2026-08-14",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      },
+      {
+        "drug": "Telmisartan",
+        "dose": "40 mg once daily",
+        "start": "2016-01-01",
+        "last_fill": "2026-08-14",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "eGFR fell 52 -> 38 in a year",
+        "Metformin dose may need review at eGFR below 45 (doctor to decide)"
+      ],
+      "expected_summary": "67M, diabetes and hypertension. Kidney function declining; current metformin dose should be reviewed by the doctor."
+    }
+  },
+  {
+    "patient_id": "SYN-005",
+    "abha_address": "syn005@synthetic",
+    "demographics": {
+      "name": "Fatima Begum",
+      "age": 34,
+      "sex": "F",
+      "state": "West Bengal",
+      "district": "Murshidabad",
+      "preferred_language": "Bengali"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2022-07-09",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Skin rash after antibiotic",
+        "note": ""
+      },
+      {
+        "date": "2025-12-03",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Sore throat",
+        "note": ""
+      }
+    ],
+    "conditions": [],
+    "observations": [
+      {
+        "date": "2025-12-03",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 112,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2025-12-03",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 72,
+        "unit": "mmHg"
+      }
+    ],
+    "medications": [],
+    "allergies": [
+      {
+        "substance": "Penicillin",
+        "reaction": "Skin rash",
+        "recorded": "2022-07-09"
+      }
+    ],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [
+        "No chronic conditions recorded"
+      ],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "medium",
+      "expected_red_flags": [
+        "Documented penicillin allergy"
+      ],
+      "expected_summary": "34F, no chronic illness. Penicillin allergy (rash) must be visible before any antibiotic is chosen."
+    }
+  },
+  {
+    "patient_id": "SYN-006",
+    "abha_address": "syn006@synthetic",
+    "demographics": {
+      "name": "Kamala Bai",
+      "age": 74,
+      "sex": "F",
+      "state": "Karnataka",
+      "district": "Raichur",
+      "preferred_language": "Kannada"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-05-12",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Fall at home",
+        "note": ""
+      },
+      {
+        "date": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Second fall, knee pain",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2010"
+      },
+      {
+        "icd10": "E11",
+        "name": "Type 2 diabetes",
+        "since": "2015"
+      },
+      {
+        "icd10": "E03",
+        "name": "Hypothyroidism",
+        "since": "2018"
+      },
+      {
+        "icd10": "M17",
+        "name": "Knee osteoarthritis",
+        "since": "2020"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-09-22",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 134,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-09-22",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 80,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-09-22",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 6.4,
+        "unit": "%"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Amlodipine",
+        "dose": "5 mg",
+        "start": "2010-01-01",
+        "last_fill": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      },
+      {
+        "drug": "Metformin",
+        "dose": "500 mg twice daily",
+        "start": "2015-01-01",
+        "last_fill": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      },
+      {
+        "drug": "Glimepiride",
+        "dose": "2 mg",
+        "start": "2017-01-01",
+        "last_fill": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      },
+      {
+        "drug": "Levothyroxine",
+        "dose": "50 mcg",
+        "start": "2018-01-01",
+        "last_fill": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      },
+      {
+        "drug": "Aspirin",
+        "dose": "75 mg",
+        "start": "2019-01-01",
+        "last_fill": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      },
+      {
+        "drug": "Pantoprazole",
+        "dose": "40 mg",
+        "start": "2024-01-01",
+        "last_fill": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      },
+      {
+        "drug": "Diclofenac",
+        "dose": "50 mg as needed",
+        "start": "2026-05-12",
+        "last_fill": "2026-09-22",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "Two falls in 4 months",
+        "7 active medications (polypharmacy)",
+        "NSAID in age 74 with hypertension and diabetes",
+        "Sulfonylurea with HbA1c 6.4 in an elderly patient (hypoglycaemia risk)"
+      ],
+      "expected_summary": "74F, four chronic conditions and 7 medicines, two recent falls. Medicine review suggested (NSAID, sulfonylurea)."
+    }
+  },
+  {
+    "patient_id": "SYN-007",
+    "abha_address": "syn007@synthetic",
+    "demographics": {
+      "name": "Aarav Patil",
+      "age": 3,
+      "sex": "M",
+      "state": "Maharashtra",
+      "district": "Nanded",
+      "preferred_language": "Marathi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-09-30",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Cough and cold",
+        "note": ""
+      }
+    ],
+    "conditions": [],
+    "observations": [
+      {
+        "date": "2026-09-30",
+        "name": "Weight",
+        "loinc": "29463-7",
+        "value": 11.0,
+        "unit": "kg"
+      }
+    ],
+    "medications": [],
+    "allergies": [],
+    "immunizations": [
+      {
+        "vaccine": "BCG",
+        "date": "2023-11-05"
+      },
+      {
+        "vaccine": "OPV",
+        "date": "2023-11-05"
+      },
+      {
+        "vaccine": "Pentavalent 1-3",
+        "date": "2024-02-10"
+      },
+      {
+        "vaccine": "MR dose 1",
+        "date": "2024-08-12"
+      }
+    ],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "medium",
+      "expected_red_flags": [
+        "Booster doses (MR 2 / DPT booster) overdue for age 3",
+        "Low weight for age, needs growth chart check"
+      ],
+      "expected_summary": "3-year-old boy, booster vaccines not recorded and weight 11.0 kg. Check immunization and growth."
+    }
+  },
+  {
+    "patient_id": "SYN-008",
+    "abha_address": "syn008@synthetic",
+    "demographics": {
+      "name": "Suresh Kumar",
+      "age": 45,
+      "sex": "M",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2021-06-14",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Fever",
+        "note": ""
+      }
+    ],
+    "conditions": [],
+    "observations": [],
+    "medications": [
+      {
+        "drug": "Paracetamol",
+        "dose": "500 mg",
+        "start": "2021-06-14",
+        "last_fill": "2021-06-14",
+        "facility": "SYN-PHC-01",
+        "stopped": "2021-06-19"
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [
+        "Vitals",
+        "Lab results",
+        "Conditions",
+        "Allergies",
+        "Any record after 2021"
+      ],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "low",
+      "expected_red_flags": [],
+      "expected_summary": "Only one old fever visit (2021). Not enough data to summarize: system must say so and not infer anything."
+    }
+  },
+  {
+    "patient_id": "SYN-009",
+    "abha_address": "syn009@synthetic",
+    "demographics": {
+      "name": "Anita Sharma",
+      "age": 43,
+      "sex": "F",
+      "state": "Madhya Pradesh",
+      "district": "Indore",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-08-01",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "BP check",
+        "note": ""
+      },
+      {
+        "date": "2026-08-14",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "BP check",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2024"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-08-01",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 138,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-08-01",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 88,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-08-01",
+        "name": "Weight",
+        "loinc": "29463-7",
+        "value": 62,
+        "unit": "kg"
+      },
+      {
+        "date": "2026-08-14",
+        "name": "Weight",
+        "loinc": "29463-7",
+        "value": 72,
+        "unit": "kg"
+      }
+    ],
+    "medications": [],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": [
+        "Name spelled Anita Sharma (PHC-01) vs Anita Sarma (CHC-02)",
+        "Year of birth 1983 vs 1981 across facilities",
+        "Weight 62 kg vs 72 kg within 13 days"
+      ]
+    },
+    "ground_truth": {
+      "expected_priority": "low",
+      "expected_red_flags": [
+        "Record identity and weight conflict across facilities"
+      ],
+      "expected_summary": "43F with hypertension. Two facilities disagree on name spelling, birth year and weight: show the conflict, do not pick silently."
+    }
+  },
+  {
+    "patient_id": "SYN-010",
+    "abha_address": "syn010@synthetic",
+    "demographics": {
+      "name": "Rohit Singh",
+      "age": 29,
+      "sex": "M",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "preferred_language": "Punjabi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-10-10",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Routine check-up",
+        "note": ""
+      }
+    ],
+    "conditions": [],
+    "observations": [
+      {
+        "date": "2026-10-10",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 118,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-10",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 76,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-10",
+        "name": "Weight",
+        "loinc": "29463-7",
+        "value": 70,
+        "unit": "kg"
+      }
+    ],
+    "medications": [],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "low",
+      "expected_red_flags": [],
+      "expected_summary": "29M, healthy routine visit with normal vitals. No concerns (negative control)."
+    }
+  },
+  {
+    "patient_id": "SYN-011",
+    "abha_address": "syn011@synthetic",
+    "demographics": {
+      "name": "Vijay Patil",
+      "age": 52,
+      "sex": "M",
+      "state": "Maharashtra",
+      "district": "Satara",
+      "preferred_language": "Marathi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-10-02",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Chest tightness on climbing stairs",
+        "note": "Smoker, 20 years"
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2023"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-10-02",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 152,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-02",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 94,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-02",
+        "name": "LDL cholesterol",
+        "loinc": "13457-7",
+        "value": 168,
+        "unit": "mg/dL"
+      },
+      {
+        "date": "2026-10-02",
+        "name": "Fasting glucose",
+        "loinc": "1558-6",
+        "value": 118,
+        "unit": "mg/dL"
+      }
+    ],
+    "medications": [],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [
+        "No ECG on record"
+      ],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "Exertional chest symptoms with several cardiac risk factors",
+        "No ECG recorded",
+        "LDL 168 and BP 152/94"
+      ],
+      "expected_summary": "52M smoker, hypertension, recent exertional chest tightness and no ECG on file. Needs urgent clinical evaluation."
+    }
+  },
+  {
+    "patient_id": "SYN-012",
+    "abha_address": "syn012@synthetic",
+    "demographics": {
+      "name": "Ganesh Nayak",
+      "age": 38,
+      "sex": "M",
+      "state": "Odisha",
+      "district": "Koraput",
+      "preferred_language": "Odia"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-08-25",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Pulmonary TB diagnosed",
+        "note": ""
+      },
+      {
+        "date": "2026-09-24",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Drug refill",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "A15",
+        "name": "Pulmonary tuberculosis",
+        "since": "2026-08"
+      }
+    ],
+    "observations": [],
+    "medications": [
+      {
+        "drug": "Anti-TB regimen (fixed-dose)",
+        "dose": "per weight band",
+        "start": "2026-08-25",
+        "last_fill": "2026-09-24",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "Treatment possibly interrupted: last refill 2026-09-24",
+        "2-month follow-up (due about 2026-10-25) not recorded"
+      ],
+      "expected_summary": "38M on TB treatment since 2026-08-25. No refill or follow-up after 2026-09-24: risk of treatment interruption."
+    }
+  },
+  {
+    "patient_id": "SYN-013",
+    "abha_address": "syn013@synthetic",
+    "demographics": {
+      "name": "Pooja Verma",
+      "age": 22,
+      "sex": "F",
+      "state": "Uttar Pradesh",
+      "district": "Lucknow",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-08-14",
+        "facility": "SYN-DH-03",
+        "type": "ER",
+        "reason": "Wheeze and breathlessness",
+        "note": ""
+      },
+      {
+        "date": "2026-10-30",
+        "facility": "SYN-DH-03",
+        "type": "ER",
+        "reason": "Wheeze and breathlessness",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "J45",
+        "name": "Asthma",
+        "since": "2019"
+      }
+    ],
+    "observations": [],
+    "medications": [
+      {
+        "drug": "Salbutamol inhaler",
+        "dose": "as needed",
+        "start": "2019-01-01",
+        "last_fill": "2026-10-30",
+        "facility": "SYN-DH-03",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "medium",
+      "expected_red_flags": [
+        "Two emergency visits in 3 months",
+        "Reliever only, no controller therapy recorded"
+      ],
+      "expected_summary": "22F with asthma, two ER visits in 11 weeks and only a reliever inhaler on record. Review asthma control."
+    }
+  },
+  {
+    "patient_id": "SYN-014",
+    "abha_address": "syn014@synthetic",
+    "demographics": {
+      "name": "Shanti Oraon",
+      "age": 29,
+      "sex": "F",
+      "state": "Jharkhand",
+      "district": "Gumla",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-10-18",
+        "facility": "SYN-PHC-01",
+        "type": "ANC",
+        "reason": "Antenatal visit",
+        "note": "About 28 weeks; diet advice given; review in 1 week"
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "O24.4",
+        "name": "Gestational diabetes",
+        "since": "2026-10"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-10-18",
+        "name": "Fasting glucose",
+        "loinc": "1558-6",
+        "value": 108,
+        "unit": "mg/dL"
+      },
+      {
+        "date": "2026-10-18",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 118,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-18",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 76,
+        "unit": "mmHg"
+      }
+    ],
+    "medications": [],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "Gestational diabetes follow-up overdue (due about 2026-10-25)"
+      ],
+      "expected_summary": "29F, about 32 weeks pregnant with gestational diabetes (fasting glucose 108). Planned review not recorded."
+    }
+  },
+  {
+    "patient_id": "SYN-015",
+    "abha_address": "syn015@synthetic",
+    "demographics": {
+      "name": "Geeta Rao",
+      "age": 49,
+      "sex": "F",
+      "state": "Telangana",
+      "district": "Warangal",
+      "preferred_language": "Telugu"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-06-01",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Diabetes follow-up",
+        "note": ""
+      },
+      {
+        "date": "2026-09-01",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Diabetes follow-up",
+        "note": "Next visit December"
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "E11",
+        "name": "Type 2 diabetes",
+        "since": "2020"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-06-01",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 6.8,
+        "unit": "%"
+      },
+      {
+        "date": "2026-09-01",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 6.6,
+        "unit": "%"
+      },
+      {
+        "date": "2026-09-01",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 124,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-09-01",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 80,
+        "unit": "mmHg"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Metformin",
+        "dose": "500 mg twice daily",
+        "start": "2020-03-01",
+        "last_fill": "2026-09-01",
+        "facility": "SYN-PHC-01",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "low",
+      "expected_red_flags": [],
+      "expected_summary": "49F, diabetes well controlled (HbA1c 6.6) and visits on schedule (negative control for chronic care)."
+    }
+  },
+  {
+    "patient_id": "SYN-016",
+    "abha_address": "syn016@synthetic",
+    "demographics": {
+      "name": "Harpal Singh",
+      "age": 58,
+      "sex": "M",
+      "state": "Punjab",
+      "district": "Amritsar",
+      "preferred_language": "Punjabi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-07-05",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "BP review",
+        "note": ""
+      },
+      {
+        "date": "2026-10-05",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "BP review",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2019"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-07-05",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 130,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-07-05",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 82,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-05",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 126,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-10-05",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 78,
+        "unit": "mmHg"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Amlodipine",
+        "dose": "5 mg once daily",
+        "start": "2019-04-01",
+        "last_fill": "2026-10-05",
+        "facility": "SYN-PHC-01",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "low",
+      "expected_red_flags": [],
+      "expected_summary": "58M, hypertension controlled with regular refills (negative control)."
+    }
+  },
+  {
+    "patient_id": "SYN-017",
+    "abha_address": "syn017@synthetic",
+    "demographics": {
+      "name": "Meena Kumari",
+      "age": 16,
+      "sex": "F",
+      "state": "Bihar",
+      "district": "Gaya",
+      "preferred_language": "Magahi/Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-09-10",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Fatigue and dizziness",
+        "note": ""
+      }
+    ],
+    "conditions": [],
+    "observations": [
+      {
+        "date": "2026-09-10",
+        "name": "Hemoglobin",
+        "loinc": "718-7",
+        "value": 8.1,
+        "unit": "g/dL"
+      },
+      {
+        "date": "2026-09-10",
+        "name": "Weight",
+        "loinc": "29463-7",
+        "value": 41,
+        "unit": "kg"
+      }
+    ],
+    "medications": [],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [
+        "No iron supplementation recorded"
+      ],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "medium",
+      "expected_red_flags": [
+        "Moderate anemia Hb 8.1 g/dL",
+        "No iron-folic acid treatment documented"
+      ],
+      "expected_summary": "16F with fatigue and Hb 8.1; no treatment on record. Anemia work-up and supplementation to be considered."
+    }
+  },
+  {
+    "patient_id": "SYN-018",
+    "abha_address": "syn018@synthetic",
+    "demographics": {
+      "name": "Bhola Prasad",
+      "age": 63,
+      "sex": "M",
+      "state": "Bihar",
+      "district": "Muzaffarpur",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-03-18",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Foot ulcer, left",
+        "note": ""
+      },
+      {
+        "date": "2026-09-12",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "Foot ulcer, left, recurrent",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "E11",
+        "name": "Type 2 diabetes",
+        "since": "2010"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-03-18",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 9.9,
+        "unit": "%"
+      },
+      {
+        "date": "2026-09-12",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 10.4,
+        "unit": "%"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Metformin",
+        "dose": "500 mg twice daily",
+        "start": "2010-01-01",
+        "last_fill": "2026-09-12",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "Recurrent diabetic foot ulcer",
+        "HbA1c 10.4 on metformin alone"
+      ],
+      "expected_summary": "63M, long-standing diabetes with recurrent foot ulcer and HbA1c 10.4. High risk, needs referral discussion."
+    }
+  },
+  {
+    "patient_id": "SYN-019",
+    "abha_address": "syn019@synthetic",
+    "demographics": {
+      "name": "Neha Joshi",
+      "age": 41,
+      "sex": "F",
+      "state": "Uttarakhand",
+      "district": "Almora",
+      "preferred_language": "Hindi"
+    },
+    "consent": {
+      "status": "expired",
+      "purpose": "care-consultation",
+      "scope": [
+        "PrescriptionRecord"
+      ],
+      "valid_until": "2026-09-30"
+    },
+    "encounters": [
+      {
+        "date": "2026-02-11",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "Diabetes review",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "E11",
+        "name": "Type 2 diabetes",
+        "since": "2021"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-02-11",
+        "name": "HbA1c",
+        "loinc": "4548-4",
+        "value": 8.2,
+        "unit": "%"
+      }
+    ],
+    "medications": [],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": []
+    },
+    "ground_truth": {
+      "expected_priority": "n/a (consent required)",
+      "expected_red_flags": [],
+      "expected_summary": "Consent expired on 2026-09-30 and covered prescriptions only. The system must NOT summarize clinical data; it must ask for fresh patient consent."
+    }
+  },
+  {
+    "patient_id": "SYN-020",
+    "abha_address": "syn020@synthetic",
+    "demographics": {
+      "name": "Salim Khan",
+      "age": 59,
+      "sex": "M",
+      "state": "Delhi",
+      "district": "North Delhi",
+      "preferred_language": "Hindi/Urdu"
+    },
+    "consent": {
+      "status": "granted",
+      "purpose": "care-consultation",
+      "scope": [
+        "OPConsultRecord",
+        "PrescriptionRecord",
+        "DiagnosticReportRecord",
+        "WellnessRecord",
+        "ImmunizationRecord"
+      ],
+      "valid_until": "2027-05-01"
+    },
+    "encounters": [
+      {
+        "date": "2026-08-05",
+        "facility": "SYN-PHC-01",
+        "type": "OP",
+        "reason": "BP review",
+        "note": ""
+      },
+      {
+        "date": "2026-09-20",
+        "facility": "SYN-CHC-02",
+        "type": "OP",
+        "reason": "BP review",
+        "note": ""
+      }
+    ],
+    "conditions": [
+      {
+        "icd10": "I10",
+        "name": "Hypertension",
+        "since": "2020"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-09-20",
+        "name": "BP systolic",
+        "loinc": "8480-6",
+        "value": 132,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-09-20",
+        "name": "BP diastolic",
+        "loinc": "8462-4",
+        "value": 84,
+        "unit": "mmHg"
+      },
+      {
+        "date": "2026-09-20",
+        "name": "Potassium",
+        "loinc": "2823-3",
+        "value": 5.4,
+        "unit": "mmol/L"
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Ramipril",
+        "dose": "5 mg once daily",
+        "start": "2025-01-10",
+        "last_fill": "2026-08-05",
+        "facility": "SYN-PHC-01",
+        "stopped": null
+      },
+      {
+        "drug": "Losartan",
+        "dose": "50 mg once daily",
+        "start": "2026-09-20",
+        "last_fill": "2026-09-20",
+        "facility": "SYN-CHC-02",
+        "stopped": null
+      }
+    ],
+    "allergies": [],
+    "immunizations": [],
+    "data_quality": {
+      "missing": [],
+      "conflicts": [
+        "Two facilities prescribed different blood-pressure drug classes"
+      ]
+    },
+    "ground_truth": {
+      "expected_priority": "high",
+      "expected_red_flags": [
+        "ACE inhibitor (ramipril) and ARB (losartan) both active",
+        "Potassium 5.4 mmol/L (high)"
+      ],
+      "expected_summary": "59M, hypertension. Two facilities prescribed an ACE inhibitor and an ARB, and potassium is 5.4. Needs medication reconciliation."
+    }
+  }
+]
